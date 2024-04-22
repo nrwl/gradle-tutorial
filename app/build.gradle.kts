@@ -11,21 +11,6 @@ dependencies {
     implementation(project(":utilities"))
 }
 
-tasks.register("task1"){
-    dependsOn(tasks.classes)
-    group = "Custom"
-    description = "A custom task"
-}
-
-tasks.named("task1"){  
-    doFirst {
-        println("NAMED TASK1 - doFirst: This is executed during the execution phase")
-    }
-    doLast {
-        println("NAMED TASK1 - doLast: This is executed during the execution phase")
-    }
-}
-
 application {
     // Define the main class for the application.
     mainClass = "org.example.app.App"
