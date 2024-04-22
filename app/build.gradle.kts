@@ -11,6 +11,17 @@ dependencies {
     implementation(project(":utilities"))
 }
 
+tasks.register("mytask"){
+    group = "Custom"
+    description = "A custom task"
+}
+
+tasks.named("mytask"){  
+    doFirst {
+        println("This is my task!")
+    }
+}
+
 application {
     // Define the main class for the application.
     mainClass = "org.example.app.App"
