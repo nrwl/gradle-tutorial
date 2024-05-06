@@ -1,4 +1,4 @@
-rootProject.name = 'gs-multi-module'
+rootProject.name = 'gradle-tutorial'
 
 include 'library'
 include 'application'
