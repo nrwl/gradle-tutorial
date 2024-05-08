@@ -6,5 +6,5 @@ build
 
 .nx/installation
 .nx/cache
-.nx/installation
-.nx/cache
+
+.idea
